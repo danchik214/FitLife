@@ -20,7 +20,8 @@ while True:
 # Запрос целочисленного веса пользователя и обарботка ошибок
 while True:
     try:
-        user_weight = round(float(input("Каков Ваш вес в кг? (Пример: 74.33) ")), 2)
+        user_weight = round(float(input("Каков Ваш вес в кг? "
+                            "(Пример: 74.33) ")), 2)
         if user_weight <= 0:
             print("Ошибка. Вес не может быть отрицательным и нулем.")
         else:
@@ -31,7 +32,8 @@ while True:
 # Запрос целочисленного роста пользователя и обарботка ошибок
 while True:
     try:
-        user_height = round(float(input("Каков Ваш рост в м? (Пример: 1.83) ")), 2)
+        user_height = round(float(input("Каков Ваш рост в м? "
+                            "(Пример: 1.83) ")), 2)
         if user_height <= 0:
             print("Ошибка. Рост не может быть отрицательным или нулем.")
         else:
