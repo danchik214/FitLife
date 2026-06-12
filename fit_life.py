@@ -4,7 +4,7 @@ WATER_PER_L = 1000
 print("Здравствуйте, это программа по расчету ИМТ и нормы воды.")
 
 # Запрос имени пользователя
-user_name = input("Как Вас зовут? ")
+user_name = input("Как Вас зовут? ").title()
 
 # Запрос целочисленного возраста пользователя и обработка ошибок
 while True:
@@ -49,7 +49,7 @@ water_needed_ml = user_weight * WATER_PER_KG
 water_needed_l = water_needed_ml / WATER_PER_L
 
 print("\n", "-" * 30, "\n")
-print(f"Отчет для пользователя: {user_name.title()} ({user_age} г.)")
+print(f"Отчет для пользователя: {user_name} {user_age} г.")
 print(f"Ваш Индекс Массы Тела: {bmi}")
 print(f"Ваша рекомендуемая норма воды: {water_needed_l:.2f} л. в день")
 print("Расчет окончен. Будьте здоровы!")
